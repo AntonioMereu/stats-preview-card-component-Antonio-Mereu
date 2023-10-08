@@ -16,6 +16,7 @@
 }
 
 body {
+  position: relative;
   display: grid;
   place-items: center;
   min-height: 100vh;
@@ -96,6 +97,20 @@ p {
   border-radius: inherit;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-block-end: 10px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+footer a {
+  color: var(--soft-violet);
+}
+
 @media screen and (min-width: 50em) {
   h1 {
     font-size: 2.2rem;
@@ -131,5 +146,9 @@ p {
     border-start-start-radius: 0px;
     border-end-end-radius: 10px;
     height: 100%;
+  }
+
+  footer {
+    font-size: 13px;
   }
 }
